@@ -14,7 +14,7 @@ function Home() {
             setLoader(true);
 
             const weatherData = await fetch(
-                `https://api.weatherapi.com/v1/current.json?key=9e2a910273314b1ea9f181432251004&q=${input}&aqi=no`
+                `https://api.weatherapi.com/v1/current.json?key=9e3b2761e773485384d203006262503&q=${input}&aqi=no`
             );
 
             const response = await weatherData.json();
