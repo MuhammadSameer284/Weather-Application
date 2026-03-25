@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 15px;
+    /* added for small screens */
     background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
@@ -12,6 +14,10 @@
 
 .weatherx-card {
     width: 340px;
+    width: 100%;
+    /* responsive */
+    max-width: 340px;
+    /* keeps original size on large screens */
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     padding: 30px;
@@ -84,4 +90,79 @@
 
 .weatherx-col p {
     font-weight: bold;
+}
+
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+/* tablets */
+
+@media (max-width: 768px) {
+
+    .weatherx-card {
+        padding: 25px;
+    }
+
+    .weatherx-temp {
+        font-size: 42px;
+    }
+
+    .weatherx-city {
+        font-size: 22px;
+    }
+
+    .weatherx-icon {
+        width: 75px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+
+    .weatherx-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .weatherx-temp {
+        font-size: 36px;
+    }
+
+    .weatherx-city {
+        font-size: 20px;
+    }
+
+    .weatherx-icon {
+        width: 65px;
+    }
+
+    .weatherx-extra {
+        flex-direction: column;
+        /* stack items */
+        gap: 15px;
+    }
+
+    .weatherx-col {
+        justify-content: center;
+    }
+
+    .weatherx-col img {
+        width: 28px;
+    }
+}
+
+/* very small devices */
+
+@media (max-width: 320px) {
+
+    .weatherx-temp {
+        font-size: 30px;
+    }
+
+    .weatherx-city {
+        font-size: 18px;
+    }
 }
