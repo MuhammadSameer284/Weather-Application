@@ -1,0 +1,87 @@
+/* main wrapper */
+
+.weatherx-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* card */
+
+.weatherx-card {
+    width: 340px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* search */
+
+.weatherx-select-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.weatherx-city-select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.weatherx-btn {
+    width: 60px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background: white;
+}
+
+/* weather info */
+
+.weatherx-icon {
+    width: 90px;
+    margin: 10px 0;
+}
+
+.weatherx-temp {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.weatherx-city {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* extra info */
+
+.weatherx-extra {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.weatherx-col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weatherx-col img {
+    width: 35px;
+}
+
+.weatherx-col p {
+    font-weight: bold;
+}

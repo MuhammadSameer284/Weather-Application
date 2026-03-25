@@ -1,0 +1,80 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.zx-navbar-wrapper{
+width:100%;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+padding:18px 0;
+}
+
+.zx-navbar-container{
+width:85%;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.zx-navbar-logo h2{
+color:white;
+font-size:26px;
+letter-spacing:1px;
+cursor:pointer;
+}
+
+.zx-navbar-menu{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+.zx-nav-link{
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+position:relative;
+transition:0.3s;
+}
+
+/* Hover underline */
+
+.zx-nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:2px;
+background:white;
+transition:0.3s;
+}
+
+.zx-nav-link:hover::after{
+width:100%;
+}
+
+/* Active link */
+
+.zx-nav-link.active{
+color:#ffcc00;
+}
+
+.zx-navbar-btn a{
+text-decoration:none;
+color:#2a5298;
+background:white;
+padding:8px 18px;
+border-radius:25px;
+font-weight:600;
+transition:0.3s;
+}
+
+.zx-navbar-btn a:hover{
+background:#ffcc00;
+color:black;
+}
